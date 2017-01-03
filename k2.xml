@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" version="3.0" method="upgrade" group="payperdownloadplus">
+	<name>PayperDownload - K2</name>
+	<version>3.2</version>
+	<creationDate>Sep 2015</creationDate>
+	<author>Ratmil</author>
+	<authorUrl>www.ratmilwebsolutions.com</authorUrl>
+	<languages>
+		<language tag="en-GB">en-GB.plg_payperdownloadplus_k2.ini</language>
+	</languages>
+	<files>
+		<filename plugin="k2">k2.php</filename>
+		<filename>k2_plugin.js</filename>
+		<filename>k2.jpg</filename>
+	</files>
+</extension>
