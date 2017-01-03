@@ -286,7 +286,7 @@ class plgPayperDownloadplusK2 extends JPlugin
 				
 				foreach($resources as $resource)
 				{
-					list($categoryId, $attachmentId) = split('_', $resource->resource_params);
+					list($categoryId, $attachmentId) = explode('_', $resource->resource_params);
 					if($attachmentId == $attachment)
 					{
 						if($resource->license_id)
@@ -311,7 +311,7 @@ class plgPayperDownloadplusK2 extends JPlugin
 				{
 					foreach($resources as $resource)
 					{
-						list($categoryId, $attachmentId) = split('_', $resource->resource_params);
+						list($categoryId, $attachmentId) = explode('_', $resource->resource_params);
 						if($resource->resource_id == $item && $attachmentId == -1)
 						{
 							if($resource->license_id)
@@ -336,7 +336,7 @@ class plgPayperDownloadplusK2 extends JPlugin
 					
 					foreach($resources as $resource)
 					{
-						list($categoryId, $attachmentId) = split('_', $resource->resource_params);
+						list($categoryId, $attachmentId) = explode('_', $resource->resource_params);
 						if($categoryId == $cat && $resource->resource_id == -1 && $attachmentId == -1)
 						{
 							if($resource->license_id)
